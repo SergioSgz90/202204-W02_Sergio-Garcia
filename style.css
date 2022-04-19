@@ -93,7 +93,7 @@ h2 {
     justify-content: center;
     align-content: center;
     gap: 50px;
-    padding: 4em;
+    padding: 1em;
 }
 .petimage {
     border-radius: 60px;
@@ -138,9 +138,23 @@ h2 {
         justify-content: center;
         align-content: center;
         
-        width: 20em;
-        height: auto;
+         width: 330px;
+         height: 400px;
        
+        padding: auto;
+        border-radius: 60px;
+    }
+}
+@media (max-width: 1040px) {
+    .petimage {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        
+        width: 230px;
+        height: 300px;
+        object-fit: cover;
         padding: auto;
         border-radius: 60px;
     }
