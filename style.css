@@ -62,6 +62,7 @@ section {
     padding: 0.5em;
     width: 80em;
     justify-content: space-evenly;
+    height: 13em;
 }
 
 #viewAll {
@@ -123,6 +124,7 @@ h2 {
         font-size: 60px;
         justify-content: left;
         align-content: center;
+
     }
 
     .ImagesContainer {
