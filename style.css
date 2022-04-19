@@ -46,7 +46,12 @@ button {
     outline-style: solid;
     outline-color: #ed6436;
     border-radius: 0px 35px 35px 35px;
+    
 }
+#buyNow:hover {
+
+}
+
 
 section {
     display: flex;
@@ -74,6 +79,13 @@ section {
     color: white;
     font-weight: 800;
     font-size: 15px;
+}
+
+#viewAll:hover {
+background-color: white;
+outline-style: solid;
+outline-color: #ed6436;
+color: #ed6436;
 }
 
 h1 {
