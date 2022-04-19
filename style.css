@@ -1,27 +1,28 @@
 body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
 }
 
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 5rem;
-    box-shadow: 0px 10px 40px rgb(242, 242, 242);
+    justify-content: space-between;
+    padding: 2rem;
+
+    box-shadow: 0px 10px 40px rgb(227, 226, 226);
 }
 
 #logo {
-    width: 100px;
+    width: 50px;
 }
 
 #boxlogo {
     display: flex;
     justify-content: left;
-    padding: 0rem 10rem;
-    width: 600px;
+    padding: 1rem 1rem;
+    width: 730px;
 }
 
 nav {
@@ -39,12 +40,17 @@ button {
     background-color: white;
     border: none;
     color: black;
-    padding: 15px 32px;
+    padding: 15px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    font-size: 200%;
+    font-size: 15px;
+}
+
+#buyNow {
+    outline-style: solid;
+    outline-color: #ed6436;
+    border-radius: 0px 35px 35px 35px;
 }
 
 section {
@@ -52,46 +58,165 @@ section {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 5rem 10rem;
+    padding: 1em;
 }
 
 #headings {
     flex-direction: column;
-    padding-right: 400px;
+    width: 1em;
+    padding: 0.5em;
+    width: 80em;
     justify-content: space-evenly;
 }
 
-#viewAll{ 
+#viewAll {
     background-color: #ed6436;
     padding: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 0px 35px 35px 35px;
     color: white;
     font-weight: 800;
-    font-size: large;
+    font-size: 15px;
 }
 
 h1 {
     font-family: 'Nunito', sans-serif;
     color: #ed6436;
+    font-size: 20px;
 }
 
 h2 {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
-    font-size: 100px;
+    font-size: 70px;
 }
 
-#PetImages {
+.ImagesContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
     gap: 50px;
-   
-    
+    padding: 4em;
 }
-#petimage{
-border-radius: 60px;
- width: 530px; height: 600px; object-fit: none;
+.petimage {
+    border-radius: 60px;
+    width: 430px;
+    height: 500px;
+    object-fit: none;
+}
+
+@media (max-width: 1400px) {
+    .headings {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: smaller;
+        display: flex;
+        font-size: 20px;
+        justify-content: left;
+        align-content: center;
+    }
+
+    h2 {
+        display: flex;
+        font-size: 60px;
+        justify-content: left;
+        align-content: center;
+    }
+
+    .ImagesContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .petimage {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        
+        width: 20em;
+        height: auto;
+       
+        padding: auto;
+        border-radius: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #boxlogo {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        width: 730px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .headings {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: smaller;
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    h2 {
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+     .ImagesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .petimage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        object-fit: contain;
+        width: auto;
+        height: fit-content;
+        padding: auto;
+        border-radius: 60px;
+    }
 }
