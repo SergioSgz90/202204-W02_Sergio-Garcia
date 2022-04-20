@@ -1,13 +1,13 @@
-
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-
     box-shadow: 0px 10px 40px rgb(227, 226, 226);
 }
+
+
 
 #logo {
     width: 50px;
@@ -17,50 +17,115 @@ header {
     display: flex;
     justify-content: left;
     padding: 1rem 1rem;
-   
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
 div {
     font-family: 'Nunito', sans-serif;
 }
 
-button {
+
+li  {
     font-family: 'Nunito', sans-serif;
     background-color: white;
     border: none;
     color: black;
-    padding: 15px 35px;
+    padding: 1em 2em; 
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display:inline-block;
     font-size: 15px;
+    ;
 }
-#home:hover {
 
+
+
+
+ul {
+    padding: 1em;
+}
+
+
+
+.dropdown {
+  display: none;
+  position: absolute;
+  min-width: auto;
+  z-index: 1;
+}
+
+
+
+.dropdown .dropdownOptions a {
+  color: black;
+  padding: auto;
+  text-decoration: none;
+  display: block;
+
+}
+
+#liveDemo:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dropdownOptions a {
+    padding-bottom: 5px;
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-color: #dcdcdc;
+}
+
+.dropdownOptions a:hover{
+    color:rgb(165, 12, 165)
+
+}
+
+#home:hover {
     border-style: solid;
     border-top: white;
     border-left: white;
     border-right: white;
     border-color: #ed6436;
-   
+}
+#liveDemo {
+    text-decoration: none;
+    color: black;
+}
 
+#liveDemo:hover {
+    
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-color: #ed6436;
+}
+
+#liveDemoBlocks {
+    padding-right: 3em;
+}
+
+#liveDemoBlocks:hover {
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-color: #ed6436;
 }
 
 #buyNow {
     outline-style: solid;
     outline-color: #ed6436;
     border-radius: 0px 35px 35px 35px;
-    
 }
 #buyNow:hover {
-background-color: #ed6436;
-color: white;
+    background-color: #ed6436;
+    color: white;
+    border-radius: 0px 35px 35px 35px;
 }
 
 
@@ -70,14 +135,15 @@ section {
     align-items: center;
     justify-content: center;
     padding: 1em;
+    gap: 40em;
     
 }
 
 #headings {
     flex-direction: column;
+    justify-content: space-between;
     
-    justify-content:space-between;
-    
+  
 }
 
 #viewAll {
@@ -92,25 +158,22 @@ section {
 }
 
 #viewAll:hover {
-background-color: white;
-outline-style: solid;
-outline-color: #ed6436;
-color: #ed6436;
+    background-color: white;
+    outline-style: solid;
+    outline-color: #ed6436;
+    color: #ed6436;
 }
 
 h1 {
     font-family: 'Nunito', sans-serif;
     color: #ed6436;
     font-size: 20px;
-    
-    
 }
 
 h2 {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 70px;
-   
 }
 
 .ImagesContainer {
@@ -128,12 +191,6 @@ h2 {
     object-fit: none;
 }
 
-.ImagesContainer h2 {
-    display: flex;
-    position:absolute;
-    font-size: medium;
-}
-
 
 
 @media (max-width: 1400px) {
@@ -142,6 +199,7 @@ h2 {
         flex-direction: row;
         align-content: center;
         justify-content: center;
+        
     }
 
     h1 {
@@ -157,7 +215,11 @@ h2 {
         font-size: 60px;
         justify-content: left;
         align-content: center;
+    }
 
+    section {
+         gap: 10em;
+         margin-bottom: 3em;
     }
 
     .ImagesContainer {
@@ -172,10 +234,10 @@ h2 {
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        
-         width: 330px;
-         height: 400px;
-       
+
+        width: 330px;
+        height: 400px;
+
         border-radius: 60px;
     }
 }
@@ -185,11 +247,11 @@ h2 {
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        
+
         width: 230px;
         height: 300px;
         object-fit: cover;
-     
+
         border-radius: 60px;
     }
 }
@@ -216,6 +278,7 @@ h2 {
         flex-direction: column;
         align-content: center;
         justify-content: center;
+        gap: 2em;
     }
 
     .headings {
@@ -224,9 +287,7 @@ h2 {
         align-content: center;
         justify-content: center;
         margin: 0;
-        padding: 0;
         border: 0;
-       
     }
 
     h1 {
@@ -235,7 +296,6 @@ h2 {
         font-size: 20px;
         justify-content: center;
         align-content: center;
-      
     }
 
     h2 {
@@ -243,8 +303,6 @@ h2 {
         font-size: 40px;
         justify-content: center;
         align-content: center;
-      
-      
     }
 
     nav {
@@ -253,7 +311,18 @@ h2 {
         align-content: center;
         justify-content: center;
     }
-     .ImagesContainer {
+ #liveDemoBlocks {
+     margin-bottom: 3em;
+ }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+}
+    .ImagesContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -267,7 +336,7 @@ h2 {
         align-content: center;
         object-fit: cover;
         width: auto;
-        height:auto;
+        height: auto;
         border-radius: 60px;
     }
 }
