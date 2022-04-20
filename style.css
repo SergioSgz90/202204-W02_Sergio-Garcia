@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: left;
     padding: 1rem 1rem;
-    width: 730px;
+   
 }
 
 nav {
@@ -41,6 +41,16 @@ button {
     display: inline-block;
     font-size: 15px;
 }
+#home:hover {
+
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-color: #ed6436;
+   
+
+}
 
 #buyNow {
     outline-style: solid;
@@ -60,15 +70,14 @@ section {
     align-items: center;
     justify-content: center;
     padding: 1em;
+    
 }
 
 #headings {
     flex-direction: column;
-    width: 1em;
-    padding: 0.5em;
-    width: 80em;
-    justify-content: space-evenly;
-    height: 13em;
+    
+    justify-content:space-between;
+    
 }
 
 #viewAll {
@@ -93,12 +102,15 @@ h1 {
     font-family: 'Nunito', sans-serif;
     color: #ed6436;
     font-size: 20px;
+    
+    
 }
 
 h2 {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 70px;
+   
 }
 
 .ImagesContainer {
@@ -115,6 +127,14 @@ h2 {
     height: 500px;
     object-fit: none;
 }
+
+.ImagesContainer h2 {
+    display: flex;
+    position:absolute;
+    font-size: medium;
+}
+
+
 
 @media (max-width: 1400px) {
     .headings {
@@ -185,8 +205,10 @@ h2 {
     #boxlogo {
         display: flex;
         justify-content: center;
-        padding: 2rem;
-        width: 730px;
+        padding: 1rem;
+        margin: 0;
+        border: 0;
+        padding: 0;
     }
 
     section {
@@ -201,6 +223,10 @@ h2 {
         flex-direction: column;
         align-content: center;
         justify-content: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+       
     }
 
     h1 {
@@ -209,6 +235,7 @@ h2 {
         font-size: 20px;
         justify-content: center;
         align-content: center;
+      
     }
 
     h2 {
@@ -216,6 +243,8 @@ h2 {
         font-size: 40px;
         justify-content: center;
         align-content: center;
+      
+      
     }
 
     nav {
