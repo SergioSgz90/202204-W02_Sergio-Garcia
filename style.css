@@ -37,6 +37,7 @@ li  {
     text-decoration: none;
     display:inline-block;
     font-size: 15px;
+    font-weight: 400;
     border-bottom: #ffffff;
     border-color: #ffffff;
     border-style: solid;
@@ -276,7 +277,7 @@ h3 {
 
 @media (max-width: 1400px) {
     .headings {
-        display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         align-content: center;
         justify-content: center;
